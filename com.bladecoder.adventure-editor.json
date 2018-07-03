@@ -48,17 +48,13 @@
                 "install -Dm644 desktop/com.bladecoder.adventure-editor.png /app/share/icons/hicolor/96x96/apps/com.bladecoder.adventure-editor.png",
                 "install -Dm644 desktop/com.bladecoder.adventure-editor.svg /app/share/icons/hicolor/scalable/apps/com.bladecoder.adventure-editor.svg",
                 "install -Dm644 desktop/com.bladecoder.adventure-editor.desktop /app/share/applications/com.bladecoder.adventure-editor.desktop",
-                "install -Dm644 com.bladecoder.adventure-editor.appdata.xml /app/share/appdata/com.bladecoder.adventure-editor.appdata.xml"
+                "install -Dm644 desktop/com.bladecoder.adventure-editor.appdata.xml /app/share/appdata/com.bladecoder.adventure-editor.appdata.xml"
             ],
             "sources" : [
                 {
                     "type": "archive",
-                    "sha256": "085c22feebdfbb2a059016a31ca70ba4b5b82ad4b4ac312d2e2ae9f1f5297a0d",
-                    "url" : "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v2.0.6/adventure-editor-2.0.6.zip"
-                },
-                {
-                    "type": "file",
-                    "path": "com.bladecoder.adventure-editor.appdata.xml"
+                    "sha256": "ebeac64d0b67550f4078285a4ad05656abfa1e184ab50d0636335f80cae320c2",
+                    "url" : "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v2.1.0/adventure-editor-2.1.0.zip"
                 }
             ]
         }
