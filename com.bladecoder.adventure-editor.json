@@ -4,7 +4,7 @@
     "runtime-version" : "1.6",
     "sdk" : "org.freedesktop.Sdk",
     "sdk-extensions" : [
-        "org.freedesktop.Sdk.Extension.openjdk9"
+        "org.freedesktop.Sdk.Extension.openjdk10"
     ],
     "command" : "adventure-editor",
     "finish-args" : [
@@ -15,6 +15,7 @@
         "--device=dri",
         "--filesystem=home",
          "--env=PATH=/usr/bin:/app/bin:/app/jre/bin",
+         "--env=JAVA_OPTS=-Djavax.net.ssl.trustStore=/app/jre/lib/security/adventure-cacerts",
          "--env=JAVA_HOME=/app/jre"
     ],
     "modules" : [
@@ -33,10 +34,21 @@
             ]
         },
         {
+            "name": "libzip",
+            "buildsystem": "cmake",
+            "sources": [
+                {
+                    "type": "archive",
+                    "sha256": "04ea35b6956c7b3453f1ed3f3fe40e3ddae1f43931089124579e8384e79ed372",
+                    "url": "https://libzip.org/download/libzip-1.5.1.tar.xz"
+                }
+            ]
+        },
+        {
             "name": "openjdk",
             "buildsystem": "simple",
             "build-commands": [
-              "/usr/lib/sdk/openjdk9/install.sh"
+              "/usr/lib/sdk/openjdk10/install.sh"
             ]
         },
         {
@@ -48,13 +60,18 @@
                 "install -Dm644 desktop/com.bladecoder.adventure-editor.png /app/share/icons/hicolor/96x96/apps/com.bladecoder.adventure-editor.png",
                 "install -Dm644 desktop/com.bladecoder.adventure-editor.svg /app/share/icons/hicolor/scalable/apps/com.bladecoder.adventure-editor.svg",
                 "install -Dm644 desktop/com.bladecoder.adventure-editor.desktop /app/share/applications/com.bladecoder.adventure-editor.desktop",
-                "install -Dm644 desktop/com.bladecoder.adventure-editor.appdata.xml /app/share/appdata/com.bladecoder.adventure-editor.appdata.xml"
+                "install -Dm644 desktop/com.bladecoder.adventure-editor.appdata.xml /app/share/appdata/com.bladecoder.adventure-editor.appdata.xml",
+                "install -Dm644 cacerts /app/jre/lib/security/adventure-cacerts"
             ],
             "sources" : [
                 {
                     "type": "archive",
                     "sha256": "ebeac64d0b67550f4078285a4ad05656abfa1e184ab50d0636335f80cae320c2",
                     "url" : "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v2.1.0/adventure-editor-2.1.0.zip"
+                },
+                {
+                    "type": "file",
+                    "path": "cacerts"
                 }
             ]
         }
