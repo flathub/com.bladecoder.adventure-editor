@@ -60,7 +60,7 @@
                 "install -Dm644 desktop/com.bladecoder.adventure-editor.png /app/share/icons/hicolor/96x96/apps/com.bladecoder.adventure-editor.png",
                 "install -Dm644 desktop/com.bladecoder.adventure-editor.svg /app/share/icons/hicolor/scalable/apps/com.bladecoder.adventure-editor.svg",
                 "install -Dm644 desktop/com.bladecoder.adventure-editor.desktop /app/share/applications/com.bladecoder.adventure-editor.desktop",
-                "install -Dm644 desktop/com.bladecoder.adventure-editor.appdata.xml /app/share/appdata/com.bladecoder.adventure-editor.appdata.xml",
+                "install -Dm644 com.bladecoder.adventure-editor.appdata.xml /app/share/appdata/com.bladecoder.adventure-editor.appdata.xml",
                 "install -Dm644 cacerts /app/jre/lib/security/adventure-cacerts"
             ],
             "sources" : [
@@ -72,6 +72,10 @@
                 {
                     "type": "file",
                     "path": "cacerts"
+                },
+                {
+                    "type": "file",
+                    "path": "com.bladecoder.adventure-editor.appdata.xml"
                 }
             ]
         }
