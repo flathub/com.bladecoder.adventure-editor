@@ -18,9 +18,10 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.0.0" date="2019-02-06"/>
     <release version="2.1.4" date="2018-09-16"/>
   </releases>
-  <update_contact>danigm@wadobo.com</update_contact>
+  <update_contact>dani@danigm.net</update_contact>
 
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
