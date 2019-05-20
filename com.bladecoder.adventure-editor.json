@@ -57,19 +57,15 @@
                 "install -D bin/adventure-editor /app/bin/adventure-editor",
                 "install -D lib/*.jar /app/lib",
                 "install -Dm644 desktop/com.bladecoder.adventure-editor.png /app/share/icons/hicolor/96x96/apps/com.bladecoder.adventure-editor.png",
+                "install -Dm644 desktop/com.bladecoder.adventure-editor.svg /app/share/icons/hicolor/scalable/apps/com.bladecoder.adventure-editor.svg",
                 "install -Dm644 desktop/com.bladecoder.adventure-editor.desktop /app/share/applications/com.bladecoder.adventure-editor.desktop",
-                "install -Dm644 com.bladecoder.adventure-editor.svg /app/share/icons/hicolor/scalable/apps/com.bladecoder.adventure-editor.svg",
                 "install -Dm644 com.bladecoder.adventure-editor.appdata.xml /app/share/appdata/com.bladecoder.adventure-editor.appdata.xml"
             ],
             "sources" : [
                 {
                     "type": "archive",
-                    "sha256": "a39e88cf7331b7b5eb2cffd7df730fb0832f78de1c4d7094c09729dc1f5c3a97",
-                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v3.1.0/adventure-editor-3.1.0.zip"
-                },
-                {
-                    "type": "file",
-                    "path": "com.bladecoder.adventure-editor.svg"
+                    "sha256": "1f6f2528f1e48f143180f8bc9d190ae9bf861568448780ec41646ac1b005cf34",
+                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v3.1.1/adventure-editor-3.1.1.zip"
                 },
                 {
                     "type": "file",
