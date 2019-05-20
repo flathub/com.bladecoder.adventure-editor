@@ -18,13 +18,12 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="3.1.1" date="2019-05-19"/>
-    <release version="3.1.0" date="2019-03-23"/>
-    <release version="3.0.0" date="2019-02-06"/>
-    <release version="2.1.4" date="2018-09-16"/>
+    <release date="2019-05-19" version="3.1.1"/>
+    <release date="2019-03-23" version="3.1.0"/>
+    <release date="2019-02-06" version="3.0.0"/>
+    <release date="2018-09-16" version="2.1.4"/>
   </releases>
   <update_contact>dani@danigm.net</update_contact>
-
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
@@ -54,4 +53,10 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
+
+  <url type="bugtracker">https://github.com/bladecoder/bladecoder-adventure-engine</url>
+  <url type="donation"></url>
+  <url type="help">https://github.com/bladecoder/bladecoder-adventure-engine</url>
+  <url type="translate">https://github.com/bladecoder/bladecoder-adventure-engine</url>
+  <translation></translation>
 </component>
