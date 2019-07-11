@@ -64,8 +64,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "sha256": "1f6f2528f1e48f143180f8bc9d190ae9bf861568448780ec41646ac1b005cf34",
-                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v3.1.1/adventure-editor-3.1.1.zip"
+                    "sha256": "8c4d129b763f6c7aeff5b21e252b968602a85a5839b4ef0b9a86396d0a8109c8",
+                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v3.1.2/adventure-editor-3.1.2.zip"
                 },
                 {
                     "type": "file",
