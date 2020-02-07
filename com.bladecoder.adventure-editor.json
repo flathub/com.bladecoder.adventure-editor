@@ -1,7 +1,7 @@
 {
     "app-id" : "com.bladecoder.adventure-editor",
     "runtime" : "org.freedesktop.Platform",
-    "runtime-version" : "18.08",
+    "runtime-version" : "19.08",
     "sdk" : "org.freedesktop.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.openjdk11"
@@ -64,8 +64,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "sha256": "4dcb0e9ebc87df012297bd30d477a412a502d5646276495122de16ae8aeab4fc",
-                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v3.2.3/adventure-editor-3.2.3.zip"
+                    "sha256": "300e0811a5eefd247ef8d56b6e6c5648034bf6f730beb4187aa6426997985779",
+                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v3.2.4/adventure-editor-3.2.4.zip"
                 },
                 {
                     "type": "file",
