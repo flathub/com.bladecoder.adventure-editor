@@ -23,8 +23,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "c1cfd4e1d4d708c031d60801e527abc9b6d34b85f2ffa2cadd21f75ff38151cd",
-                    "url": "https://www.x.org/releases/individual/app/xrandr-1.5.0.tar.bz2"
+                    "sha256": "9a9a6c9b20a67a6ea0908271bd2f25033bc3b555b22c42822dc514cdcf4842d4",
+                    "url": "https://gitlab.freedesktop.org/xorg/app/xrandr/-/archive/xrandr-1.5.1/xrandr-xrandr-1.5.1.tar.bz2"
                 },
                 {
                      "type": "shell",
