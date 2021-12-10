@@ -1,7 +1,7 @@
 {
     "app-id" : "com.bladecoder.adventure-editor",
     "runtime" : "org.freedesktop.Platform",
-    "runtime-version" : "20.08",
+    "runtime-version" : "21.08",
     "sdk" : "org.freedesktop.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.openjdk11"
@@ -10,7 +10,8 @@
     "finish-args" : [
         "--share=network",
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
+        "--socket=wayland",
         "--socket=pulseaudio",
         "--device=dri",
         "--filesystem=home",
@@ -64,8 +65,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "sha256": "8b148e325d91506648ee5c5b638b2ba9d471c71db1c0ee1f9092a6bfc8e81899",
-                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v4.0.2/adventure-editor-4.0.2.zip"
+                    "sha256": "c83e8c75e07b7a613ef8415ed144c9b6c213fad4d776b548fba975c2bed658f7",
+                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v4.1.0/adventure-editor-4.1.0.zip"
                 },
                 {
                     "type": "file",
