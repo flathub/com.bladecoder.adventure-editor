@@ -1,17 +1,16 @@
 {
     "app-id" : "com.bladecoder.adventure-editor",
     "runtime" : "org.freedesktop.Platform",
-    "runtime-version" : "21.08",
+    "runtime-version" : "22.08",
     "sdk" : "org.freedesktop.Sdk",
     "sdk-extensions" : [
-        "org.freedesktop.Sdk.Extension.openjdk11"
+        "org.freedesktop.Sdk.Extension.openjdk17"
     ],
     "command" : "adventure-editor",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
-        "--socket=fallback-x11",
-        "--socket=wayland",
+        "--socket=x11",
         "--socket=pulseaudio",
         "--device=dri",
         "--filesystem=home",
@@ -24,8 +23,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "9a9a6c9b20a67a6ea0908271bd2f25033bc3b555b22c42822dc514cdcf4842d4",
-                    "url": "https://gitlab.freedesktop.org/xorg/app/xrandr/-/archive/xrandr-1.5.1/xrandr-xrandr-1.5.1.tar.bz2"
+                    "sha256": "bcd746b4045b29ca5cd5af55345ee678a15b3a07656feed3a28162cc16d0f934",
+                    "url": "https://gitlab.freedesktop.org/xorg/app/xrandr/-/archive/xrandr-1.5.2/xrandr-xrandr-1.5.2.tar.bz2"
                 },
                 {
                      "type": "shell",
@@ -39,8 +38,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "04ea35b6956c7b3453f1ed3f3fe40e3ddae1f43931089124579e8384e79ed372",
-                    "url": "https://libzip.org/download/libzip-1.5.1.tar.xz"
+                    "sha256": "cd2a7ac9f1fb5bfa6218272d9929955dc7237515bba6e14b5ad0e1d1e2212b43",
+                    "url": "https://libzip.org/download/libzip-1.10.0.tar.xz"
                 }
             ]
         },
@@ -48,7 +47,7 @@
             "name": "openjdk",
             "buildsystem": "simple",
             "build-commands": [
-              "/usr/lib/sdk/openjdk11/installjdk.sh"
+              "/usr/lib/sdk/openjdk17/installjdk.sh"
             ]
         },
         {
@@ -65,8 +64,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "sha256": "c83e8c75e07b7a613ef8415ed144c9b6c213fad4d776b548fba975c2bed658f7",
-                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v4.1.0/adventure-editor-4.1.0.zip"
+                    "sha256": "ddb5143a68046e9e336be7f601715c44b07db6190179c22e3fa0a48660be3ad9",
+                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v4.2.0/adventure-editor-4.2.0.zip"
                 },
                 {
                     "type": "file",
