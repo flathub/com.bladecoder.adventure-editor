@@ -18,6 +18,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release date="2023-10-20" version="4.3.0">
+      <description>
+        <ul>
+          <li>Fallback fonts/multiple fonts files to support dynamic font changing needed for Chinese and other logographic languages.</li>
+          <li>Upgrade ad + robovm + android plugin to latest versions.</li>
+          <li>Bugfix wn ding a new item to a Ink list.</li>
+        </ul>
+      </description>
+    </release>
     <release date="2023-07-07" version="4.2.0"/>
     <release date="2021-12-10" version="4.1.0"/>
     <release date="2021-01-22" version="4.0.2"/>

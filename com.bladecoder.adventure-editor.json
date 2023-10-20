@@ -11,9 +11,11 @@
         "--share=network",
         "--share=ipc",
         "--socket=x11",
+        "--socket=wayland",
         "--socket=pulseaudio",
         "--device=dri",
         "--filesystem=home",
+        "--filesystem=xdg-run/pipewire-0",
          "--env=PATH=/usr/bin:/app/bin:/app/jdk/bin",
          "--env=JAVA_HOME=/app/jdk"
     ],
@@ -64,8 +66,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "sha256": "ddb5143a68046e9e336be7f601715c44b07db6190179c22e3fa0a48660be3ad9",
-                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v4.2.0/adventure-editor-4.2.0.zip"
+                    "sha256": "34cb15a0427b9c10da5402597dde86497af7ec697d79beb72135dc5bd34bf8b0",
+                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v4.3.0/adventure-editor-4.3.0.zip"
                 },
                 {
                     "type": "file",
