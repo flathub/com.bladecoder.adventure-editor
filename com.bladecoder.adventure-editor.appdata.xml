@@ -18,6 +18,14 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release date="2023-11-12" version="4.3.1">
+      <description>
+        <ul>
+          <li>Bugfix small font size.</li>
+          <li>Update libgdx v1.12.1.</li>
+        </ul>
+      </description>
+    </release>
     <release date="2023-10-20" version="4.3.0">
       <description>
         <ul>
