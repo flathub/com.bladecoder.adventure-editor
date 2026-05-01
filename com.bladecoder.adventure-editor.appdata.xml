@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
-  <id>com.bladecoder.adventure-editor.desktop</id>
-  <name>adventure-editor</name>
+<component type="desktop-application">
+  <id>com.bladecoder.adventure-editor</id>
+  <provides>
+    <id>com.bladecoder.adventure-editor.desktop</id>
+  </provides>
+  <name>Adventure Editor</name>
   <project_license>Apache-2.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
-  <developer_name>Rafael García Moreno</developer_name>
+  <developer id="com.bladecoder">
+    <name>Rafael García Moreno</name>
+  </developer>
   <summary>Classic point and click adventure game engine and editor</summary>
   <url type="homepage">https://github.com/bladecoder/bladecoder-adventure-engine</url>
+  <url type="bugtracker">https://github.com/bladecoder/bladecoder-adventure-engine/issues</url>
+  <url type="vcs-browser">https://github.com/bladecoder/bladecoder-adventure-engine</url>
+  <launchable type="desktop-id">com.bladecoder.adventure-editor.desktop</launchable>
+  <update_contact>dani@danigm.net</update_contact>
+  <content_rating type="oars-1.1"/>
   <description>
     <p>
     The Bladecoder Adventure Engine is a set of tools to create interactive graphic adventures (classical point and click games).
@@ -52,40 +62,4 @@
     <release date="2019-02-06" version="3.0.0"/>
     <release date="2018-09-16" version="2.1.4"/>
   </releases>
-  <update_contact>dani@danigm.net</update_contact>
-  <content_rating type="oars-1.1">
-    <content_attribute id="violence-cartoon">none</content_attribute>
-    <content_attribute id="violence-fantasy">none</content_attribute>
-    <content_attribute id="violence-realistic">none</content_attribute>
-    <content_attribute id="violence-bloodshed">none</content_attribute>
-    <content_attribute id="violence-sexual">none</content_attribute>
-    <content_attribute id="violence-desecration">none</content_attribute>
-    <content_attribute id="violence-slavery">none</content_attribute>
-    <content_attribute id="violence-worship">none</content_attribute>
-    <content_attribute id="drugs-alcohol">none</content_attribute>
-    <content_attribute id="drugs-narcotics">none</content_attribute>
-    <content_attribute id="drugs-tobacco">none</content_attribute>
-    <content_attribute id="sex-nudity">none</content_attribute>
-    <content_attribute id="sex-themes">none</content_attribute>
-    <content_attribute id="sex-homosexuality">none</content_attribute>
-    <content_attribute id="sex-prostitution">none</content_attribute>
-    <content_attribute id="sex-adultery">none</content_attribute>
-    <content_attribute id="sex-appearance">none</content_attribute>
-    <content_attribute id="language-profanity">none</content_attribute>
-    <content_attribute id="language-humor">none</content_attribute>
-    <content_attribute id="language-discrimination">none</content_attribute>
-    <content_attribute id="social-chat">none</content_attribute>
-    <content_attribute id="social-info">none</content_attribute>
-    <content_attribute id="social-audio">none</content_attribute>
-    <content_attribute id="social-location">none</content_attribute>
-    <content_attribute id="social-contacts">none</content_attribute>
-    <content_attribute id="money-purchasing">none</content_attribute>
-    <content_attribute id="money-gambling">none</content_attribute>
-  </content_rating>
-
-  <url type="bugtracker">https://github.com/bladecoder/bladecoder-adventure-engine</url>
-  <url type="donation"></url>
-  <url type="help">https://github.com/bladecoder/bladecoder-adventure-engine</url>
-  <url type="translate">https://github.com/bladecoder/bladecoder-adventure-engine</url>
-  <translation></translation>
 </component>
