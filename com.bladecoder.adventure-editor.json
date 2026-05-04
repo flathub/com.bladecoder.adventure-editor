@@ -1,7 +1,7 @@
 {
     "app-id" : "com.bladecoder.adventure-editor",
     "runtime" : "org.freedesktop.Platform",
-    "runtime-version" : "23.08",
+    "runtime-version" : "25.08",
     "sdk" : "org.freedesktop.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.openjdk17"
@@ -19,14 +19,20 @@
          "--env=PATH=/usr/bin:/app/bin:/app/jdk/bin",
          "--env=JAVA_HOME=/app/jdk"
     ],
+    "cleanup": [
+        "/include",
+        "/lib/cmake",
+        "/lib/pkgconfig",
+        "/share/man"
+    ],
     "modules" : [
         {
-            "name": "xorg-xrandr",
+            "name": "xrandr",
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "bcd746b4045b29ca5cd5af55345ee678a15b3a07656feed3a28162cc16d0f934",
-                    "url": "https://gitlab.freedesktop.org/xorg/app/xrandr/-/archive/xrandr-1.5.2/xrandr-xrandr-1.5.2.tar.bz2"
+                    "url": "https://xorg.freedesktop.org/archive/individual/app/xrandr-1.5.4.tar.xz",
+                    "sha256": "2cafccb2aaf2491a4068676117a0d4f90ab307724b96fffc54cd1da953779400"
                 },
                 {
                      "type": "shell",
@@ -40,8 +46,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "cd2a7ac9f1fb5bfa6218272d9929955dc7237515bba6e14b5ad0e1d1e2212b43",
-                    "url": "https://libzip.org/download/libzip-1.10.0.tar.xz"
+                    "url": "https://libzip.org/download/libzip-1.11.4.tar.xz",
+                    "sha256": "8a247f57d1e3e6f6d11413b12a6f28a9d388de110adc0ec608d893180ed7097b"
                 }
             ]
         },
@@ -58,16 +64,15 @@
             "build-commands": [
                 "install -D bin/adventure-editor /app/bin/adventure-editor",
                 "install -D lib/*.jar /app/lib",
-                "install -Dm644 desktop/com.bladecoder.adventure-editor.png /app/share/icons/hicolor/96x96/apps/com.bladecoder.adventure-editor.png",
-                "install -Dm644 desktop/com.bladecoder.adventure-editor.svg /app/share/icons/hicolor/scalable/apps/com.bladecoder.adventure-editor.svg",
-                "install -Dm644 desktop/com.bladecoder.adventure-editor.desktop /app/share/applications/com.bladecoder.adventure-editor.desktop",
-                "install -Dm644 com.bladecoder.adventure-editor.appdata.xml /app/share/appdata/com.bladecoder.adventure-editor.appdata.xml"
+                "install -Dm644 desktop/com.bladecoder.adventure-editor.svg -t /app/share/icons/hicolor/scalable/apps/",
+                "install -Dm644 desktop/com.bladecoder.adventure-editor.desktop -t /app/share/applications/",
+                "install -Dm644 com.bladecoder.adventure-editor.appdata.xml -t /app/share/metainfo/"
             ],
             "sources" : [
                 {
                     "type": "archive",
-                    "sha256": "f381207444f3ee80c75f813e6943a89a92b87e96c50d006d11206f2f7684ccdb",
-                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v4.3.1/adventure-editor-4.3.1.zip"
+                    "url": "https://github.com/bladecoder/bladecoder-adventure-engine/releases/download/v4.3.1/adventure-editor-4.3.1.zip",
+                    "sha256": "f381207444f3ee80c75f813e6943a89a92b87e96c50d006d11206f2f7684ccdb"
                 },
                 {
                     "type": "file",
